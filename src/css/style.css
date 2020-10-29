@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap');
+
+/*
+ Títulos: font-family: 'Saira Semi Condensed', sans-serif;
+ Restante: font-family: 'Acme', sans-serif;
+*/
+
+/* soft reset */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-family: 'Acme', sans-serif;
+  font-size: 10px; /* padronizando o 'em' */
+}
+
+header, section, footer {
+  margin: 0 auto;
+  width: 385px;
+}
+
+@media (max-width: 425px) {
+  
+}
