@@ -21,11 +21,232 @@ body {
   font-size: 10px; /* padronizando o 'em' */
 }
 
-header, section, footer {
-  margin: 0 auto;
-  width: 385px;
+/* TODO: FIXED
+    position: fixed;
+    width: 100vw;
+    background: #fff;
+*/ 
+header {
+  align-items: center;
+  border-bottom: 2px solid #1571C6;
+  display: flex;
+  height: 12vh;
+  justify-content: space-between;
+  padding: 0 80px 0 40px;
 }
 
-@media (max-width: 425px) {
-  
+header img {
+  display: block;
+  width: 200px;
+}
+
+.menu-header ul {
+  /* border: 2px solid yellowgreen; */
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+}
+
+.menu-header ul li a {
+  color: #1571C6;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 2em;
+}
+
+.menu-header ul li a:hover {
+  color: #73aadd;
+  text-decoration: underline;
+}
+
+#inicio {
+  background-image: url("./../images/header-bg.png");
+  background-size: 100% 88vh;
+  color: #1571C6;
+  display: flex;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  height: 88vh;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.cownecta-web {
+  display: block;
+  width: 560px;
+}
+
+.slogan p:first-child {
+  font-size: 8em;
+}
+
+.cow {
+  font-family: 'Acme', sans-serif;
+}
+
+.necta {
+  bottom: -0.12em;
+  position: relative;
+}
+
+.slogan p:last-child {
+  font-size: 3.5em;
+}
+
+#como-funciona, #planos, #quem-somos {
+  height: 100vh;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 95vw;
+}
+
+#como-funciona {
+  height: auto;
+  /* height: 170vh; */
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 4em;
+}
+
+.app, .site {
+  display: grid;
+  grid-row-gap: 40px;
+  grid-template-columns: 480px 480px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+  width: 940px;
+}
+
+.app {
+  border-bottom: 2px solid #1571C6;
+  padding-bottom: 30px;
+}
+
+.fab, .far, .fas {
+  background: #1571C6;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 4em;
+  height: 80px;
+  padding-top: 17px;
+  text-align: center;
+  width: 80px;
+}
+
+.item {
+  padding: 0 20px;
+}
+
+.item-title {
+  color: #1571C6;
+  font-size: 3em;
+  margin: 0.5em 0;
+}
+
+.item p:last-child {
+  color: #73aadd;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 2em;
+}
+
+#planos {
+  background-image: url("https://www.schwabinsagency.com/img/~www.schwabinsagency.com/farm%20pic.jpg");
+  background-size: cover;
+  text-align: center;
+  width: auto;
+}
+
+.obs {
+  color: #606160;
+  font-size: 1.4em;
+}
+
+#quem-somos {
+  background-image: url("../images/quem-somos-bg.png");
+  background-size: cover;
+  text-align: center;
+  width: auto;
+}
+
+.lab32 {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.time {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px auto 60px;
+  width: 100%;
+}
+
+.integrante img {
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+  width: 200px;
+}
+
+.integrante p {
+  font-size: 2em;
+  margin: 20px 0;
+  width: 200px;
+}
+
+.integrante span {
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.integrante .fab, .integrante .far, .integrante .fas {
+  border: 2px solid #73aadd;
+}
+
+.integrante .fab:hover, .integrante .far:hover, .integrante .fas:hover {
+  background: #73aadd;
+}
+
+.links {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.links a {
+  font-size: 0.5em;
+}
+
+.links .fab, .links .fas {
+  width: auto;
+}
+
+footer {
+  align-items: center;
+  background: #222222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  height: 35vh;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.localizacao a {
+  color: #73aadd;
+}
+
+#contato .fab, #contato .far, #contato .fas {
+  font-size: 1.6em;
+  height: 60px;
+  width: 60px;
+}
+
+#contato .fab:hover, #contato .far:hover, #contato .fas:hover {
+ opacity: 0.6;
 }
